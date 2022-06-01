@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&family=Oswald:wght@700&display=swap');
+ 
+ body{
+     color:black;
+     background-color:lightgray;
+     font-family:serif;
+     margin: 0px
+     }
+ 
+   h1{
+     font-size: 36px;
+     background-color:orange;
+     font-family: 'Oswald', 'Noto+Sans+JP', sans-serif;
+     padding:10px;
+     margin: 0px;
+     }
+
+   h2{
+     font-size: 18px;
+     background-color:orange;
+     font-family:sans-serif;
+     text-align:right;
+     margin:0px;
+     padding:10px;
+     }
+
+   h3{
+     font-size: 18px;
+     font-family:sans-serif;
+     padding-top:20px;
+     }
+
+  div{
+     background-color:white;
+     box-shadow:10px 10px 5px #808080;
+     border-radius:10px;
+     width:500px;
+     height:165px;
+     margin:auto;
+     margin-bottom:20px;
+     margin-top:20px;
+     padding-left:10px;
+     padding-bottom:20px;
+     overflow: hidden;
+     }
+
+  img{
+     width:200px;
+     }
+   
+figure{
+     font-size: 0wpx;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-left: 10px;
+     margin-right: 20px;
+     float:right;
+     }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

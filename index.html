@@ -26,13 +26,16 @@
 	<p>お使いのOS<br>
 		<input type="checkbox" name="os" value="win7">Windows7
 		<input type="checkbox" name="os" value="win8">Windows8
-		<input type="checkbox" name="os" value="win10">Windows10
+		<input type="checkbox" name="os" value="win10">Windows10chk = tkinter.Checkbutton(tki, text='Pythonを使用する')
+chk.place(x=50, y=70)
 		<input type="checkbox" name="os" value="mac">Mac
 		<input type="checkbox" name="os" value="linux">Linux
 	</p>
 	<p><input type="submit" value="確認する"></p>
 </form>
 		<py-script>
+			chk = tkinter.Checkbutton(tki, text='Pythonを使用する')
+			chk.place(x=50, y=70)
 		</py-script>
 	
 	</body>

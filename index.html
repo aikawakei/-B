@@ -25,29 +25,7 @@
                 </div>
 		
 		<py-script>
-		import random
-# 問題の作成
-quizzes = {}
-quizzes['問題1'] = {'問題文':'野球は何人でするスポーツ？', '選択肢':['7人', '9人', '11人'], '正解':'9人'}
-quizzes['問題2'] = {'問題文':'プロテインは何？', '選択肢':['タンパク質','ビタミンc', 'ビタミンa'], '正解':'タンパク質'}
-quizzes['問題3'] = {'問題文':'小学校は何年間？', '選択肢':['5年', '6年', '9年'], '正解':'6年'}
-
-# 出題 ランダムに選択
-key, value = random.choice(list(quizzes.items()))
-print(key, value['問題文'])
-print('選択肢 ', end='') # 改行なし
-for i in range(len(value['選択肢'])):
-ㅤㅤprint(f"{i+1}.'{value['選択肢'][i]}' ", end='') # i+1は1始まりに直すため
-print('')#改行用
-
-# 解答
-answer = int(input('解答を選択肢の番号で入力してください>'))
-
-# 正解チェック answer-1は1始まりの解答を0始まりのインデックスに戻す
-if value['選択肢'][answer-1] == value['正解']:
-ㅤㅤprint('正解！')
-else:
-ㅤㅤprint(f"はずれ。正解は{value['正解']}でした")
+		
 		</py-script>
 	
 	</body>

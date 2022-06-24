@@ -55,15 +55,14 @@
                      <label><input type="radio" name="radio5" class="radio5" value="チェック3">チェック3</label>
                 </div>
 	        </form>
+		<p class="dog">I am dog!</p>
 		
 		<py-script>
-		
-	        a = radio1
-		b = radio2
-		c = radio3
-		d = radio4
-		e = radio5
-			print a
+		from bs4 import BeautifulSoup
+		soup = BeautifulSoup(html, 'html.index')
+		found = soup.find('p', class_='dog')
+	        print(found.text)
+			print (found.text)
 		
 		</py-script>
 	

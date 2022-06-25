@@ -3,7 +3,7 @@ tki = tkinter.Tk()
 tki.geometry('300x200')
 tki.title('ラジオボタン')
 
-rdo_txt = ['Python','Java','C#']
+rdo_txt = ['チェック1','チェック2','チェック3']
 rdo_var = tkinter.IntVar()
 
 for i in range(len(rdo_txt)):

@@ -67,8 +67,7 @@
 			rdo_var = tkinter.IntVar()
 			
 			for i in range(len(rdo_txt)):
-			
-			rdo = tkinter.Radiobutton(tki, value=i, variable=rdo_var, text=rdo_txt[i]) 
+			rdo = tkinter.Radiobutton(tki, value=i, variable=rdo_var, text=rdo_txt[i])
 			rdo.place(x=50, y=30 + (i * 24))
 			
 			def btn_click():

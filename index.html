@@ -19,61 +19,62 @@
 			<a href="access/index.html">・kyouiku</a>
 		</p>
 		<form name="mondai" method="post">
+			
 		<div class = "mondai" id ="01">
-		    <p> サンプル問題1</p>
-	   
-                     <label><input type="radio" name="radio1" class="radio1" value="チェック1">チェック1</label>
-                     <label><input type="radio" name="radio1" class="radio1" value="チェック2">チェック2</label>
-                     <label><input type="radio" name="radio1" class="radio1" value="チェック3">チェック3</label>
-                </div>
+		        <p> サンプル問題1</p>
+
+			<label><input type="radio" name="radio1" class="radio1" value="チェック1">チェック1</label>
+			<label><input type="radio" name="radio1" class="radio1" value="チェック2">チェック2</label>
+			<label><input type="radio" name="radio1" class="radio1" value="チェック3">チェック3</label>
+		</div>
 		<div class = "mondai" id ="02">
-		    <p> サンプル問題2</p>
-	   
-                     <label><input type="radio" name="radio2" class="radio2" value="チェック1">チェック1</label>
-                     <label><input type="radio" name="radio2" class="radio2" value="チェック2">チェック2</label>
-                     <label><input type="radio" name="radio2" class="radio2" value="チェック3">チェック3</label>
+		        <p> サンプル問題2</p>
+
+			<label><input type="radio" name="radio2" class="radio2" value="チェック1">チェック1</label>
+                        <label><input type="radio" name="radio2" class="radio2" value="チェック2">チェック2</label>
+                        <label><input type="radio" name="radio2" class="radio2" value="チェック3">チェック3</label>
                 </div>
 		<div class = "mondai" id ="03">
-		    <p> サンプル問題3</p>
-	   
-                     <label><input type="radio" name="radio3" class="radio3" value="チェック1">チェック1</label>
-                     <label><input type="radio" name="radio3" class="radio3" value="チェック2">チェック2</label>
-                     <label><input type="radio" name="radio3" class="radio3" value="チェック3">チェック3</label>
+		        <p> サンプル問題3</p>
+
+			<label><input type="radio" name="radio3" class="radio3" value="チェック1">チェック1</label>
+                        <label><input type="radio" name="radio3" class="radio3" value="チェック2">チェック2</label>
+                        <label><input type="radio" name="radio3" class="radio3" value="チェック3">チェック3</label>
                 </div>
 		<div class = "mondai" id ="04">
-		     <p> サンプル問題4</p>
-			
-		     <label><input type="radio" name="radio4" class="radio4" value="チェック1">チェック1</label>
-		     <label><input type="radio" name="radio4" class="radio4" value="チェック2">チェック2</label>
-		     <label><input type="radio" name="radio4" class="radio4" value="チェック3">チェック3</label>
+		        <p> サンプル問題4</p>
+
+			<label><input type="radio" name="radio4" class="radio4" value="チェック1">チェック1</label>
+		        <label><input type="radio" name="radio4" class="radio4" value="チェック2">チェック2</label>
+		        <label><input type="radio" name="radio4" class="radio4" value="チェック3">チェック3</label>
                 </div>
 		<div class = "mondai" id ="05">
-		    <p> サンプル問題5</p>
-	   
-                     <label><input type="radio" name="radio5" class="radio5" value="チェック1">チェック1</label>
-                     <label><input type="radio" name="radio5" class="radio5" value="チェック2">チェック2</label>
-                     <label><input type="radio" name="radio5" class="radio5" value="チェック3">チェック3</label>
+		        <p> サンプル問題5</p>
+
+			<label><input type="radio" name="radio5" class="radio5" value="チェック1">チェック1</label>
+                        <label><input type="radio" name="radio5" class="radio5" value="チェック2">チェック2</label>
+                        <label><input type="radio" name="radio5" class="radio5" value="チェック3">チェック3</label>
                 </div>
-	        </form>
+		</form>
 		<p class="dog">I am dog!</p>
 		
 		<py-script>
 		import tkinter, tkinter.messagebox
-		tki = tkinter.Tk()
-		tki.geometry('300x200')
-		tki.title('ラジオボタン')
-		
-		rdo_txt = ['Python','Java','C#']
-		rdo_var = tkinter.IntVar()
-		
+			tki = tkinter.Tk()
+			tki.geometry('300x200')
+			tki.title('ラジオボタン')
+			
+			rdo_txt = ['Python','Java','C#']
+			rdo_var = tkinter.IntVar()
+			
 		for i in range(len(rdo_txt)):
-		rdo = tkinter.Radiobutton(tki, value=i, variable=rdo_var, text=rdo_txt[i])
-		rdo.place(x=50, y=30 + (i * 24))
-		
+			rdo = tkinter.Radiobutton(tki, value=i, variable=rdo_var, text=rdo_txt[i])
+			rdo.place(x=50, y=30 + (i * 24))
+			
 		def btn_click():
-		num = rdo_var.get()
-		tkinter.messagebox.showinfo('チェックされた項目', rdo_txt[num])
-		
+			num = rdo_var.get()
+			tkinter.messagebox.showinfo('チェックされた項目', rdo_txt[num])
+			
 		btn = tkinter.Button(tki, text='ラジオボタン取得', command=btn_click)
 		btn.place(x=100, y=170) 
 		</py-script>

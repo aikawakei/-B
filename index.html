@@ -30,35 +30,36 @@
 		<div class = "mondai" id ="02">
 		        <p> サンプル問題2</p>
 
-			<label><input type="radio" name="radio2" class="radio4" value="チェック1">チェック1</label>
-                        <label><input type="radio" name="radio2" class="radio5" value="チェック2">チェック2</label>
-                        <label><input type="radio" name="radio2" class="radio6" value="チェック3">チェック3</label>
+			<label><input type="radio" name="radio2" class="radio4" value="">チェック1</label>
+                        <label><input type="radio" name="radio2" class="radio5" value="">チェック2</label>
+                        <label><input type="radio" name="radio2" class="radio6" value="">チェック3</label>
                 </div>
 		<div class = "mondai" id ="03">
 		        <p> サンプル問題3</p>
 
-			<label><input type="radio" name="radio3" class="radio7" value="チェック1">チェック1</label>
-                        <label><input type="radio" name="radio3" class="radio8" value="チェック2">チェック2</label>
-                        <label><input type="radio" name="radio3" class="radio9" value="チェック3">チェック3</label>
+			<label><input type="radio" name="radio3" class="radio7" value="">チェック1</label>
+                        <label><input type="radio" name="radio3" class="radio8" value="">チェック2</label>
+                        <label><input type="radio" name="radio3" class="radio9" value="">チェック3</label>
                 </div>
 		<div class = "mondai" id ="04">
 		        <p> サンプル問題4</p>
 
-			<label><input type="radio" name="radio4" class="radio10" value="チェック1">チェック1</label>
-		        <label><input type="radio" name="radio4" class="radio11" value="チェック2">チェック2</label>
-		        <label><input type="radio" name="radio4" class="radio12" value="チェック3">チェック3</label>
+			<label><input type="radio" name="radio4" class="radio10" value="">チェック1</label>
+		        <label><input type="radio" name="radio4" class="radio11" value="">チェック2</label>
+		        <label><input type="radio" name="radio4" class="radio12" value="">チェック3</label>
                 </div>
 		<div class = "mondai" id ="05">
 		        <p> サンプル問題5</p>
 
-			<label><input type="radio" name="radio5" class="radio13" value="チェック1">チェック1</label>
-                        <label><input type="radio" name="radio5" class="radio14" value="チェック2">チェック2</label>
-                        <label><input type="radio" name="radio5" class="radio15" value="チェック3">チェック3</label>
+			<label><input type="radio" name="radio5" class="radio13" value="">チェック1</label>
+                        <label><input type="radio" name="radio5" class="radio14" value="">チェック2</label>
+                        <label><input type="radio" name="radio5" class="radio15" value="">チェック3</label>
                 </div>
 		</form>
 		
 		
 		<py-script>
+	        from bs4 import BeautifulSoup
 		import tkinter, tkinter.messagebox
 			tki = tkinter.Tk()
 			tki.geometry('300x200')
@@ -77,6 +78,8 @@
 			
 		btn = tkinter.Button(tki, text='ラジオボタン取得', command=btn_click)
 		btn.place(x=100, y=170) 
+			
+			
 		</py-script>
 	
 	</body>
